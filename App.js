@@ -66,9 +66,13 @@ const tabNavigatorConfiguration = {
   tabBarPosition: 'bottom',
   swipeEnabled: true,
   tabBarOptions: {
-    activeTintColor: 'red',
+    activeTintColor: '#23e000',
     inactiveTintColor: 'black',
     showLabel: true,
+    pressColor: '#23e000',
+    indicatorStyle: {
+      backgroundColor: '#23e000',
+    },
     style: {
       backgroundColor: 'white',
     },
