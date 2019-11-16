@@ -5,10 +5,16 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
+const navbarTitleStyle = {
+  flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
 class NavbarTitle extends React.Component {
   render() {
     return(
-      <View>
+      <View style={navbarTitleStyle}>
         <Text>React Navigation Playground</Text>
       </View>
     );
