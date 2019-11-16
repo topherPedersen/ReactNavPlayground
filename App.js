@@ -11,6 +11,10 @@ const navbarTitleStyle = {
   alignItems: 'center',
 };
 
+const tabbarStyle = {
+
+};
+
 class NavbarTitle extends React.Component {
   render() {
     return(
@@ -61,6 +65,14 @@ const routeConfiguration = {
 const tabNavigatorConfiguration = {
   tabBarPosition: 'bottom',
   swipeEnabled: true,
+  tabBarOptions: {
+    activeTintColor: 'red',
+    inactiveTintColor: 'black',
+    showLabel: true,
+    style: {
+      backgroundColor: 'white',
+    },
+  },
 };
 
 const myTabNavigator = createMaterialTopTabNavigator(routeConfiguration, tabNavigatorConfiguration);
