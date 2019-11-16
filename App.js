@@ -5,10 +5,20 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
+class NavbarTitle extends React.Component {
+  render() {
+    return(
+      <View>
+        <Text>React Navigation Playground</Text>
+      </View>
+    );
+  }
+}
+
 class HomeScreen extends React.Component {
 
   static navigationOptions = {
-    title: "Home",
+    title: 'Home',
   };
 
   render() {
@@ -53,7 +63,7 @@ const RootStack = createStackNavigator(
   {
     Home: {
       screen: myTabNavigator,
-      navigationOptions: {title: "ReactNavPlayground"}
+      navigationOptions: {headerTitle: () => <NavbarTitle/>}
     }
   },
   {
